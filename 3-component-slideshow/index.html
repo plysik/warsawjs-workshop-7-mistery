@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            *, *:before, *:after {
+                box-sizing: border-box;
+            }
+            component-slideshow{
+                display: inline-block;
+                vertical-align: top;
+            }
+        </style>
+    </head>
+    <body>        
+        <link rel="import" href="../3-component-slideshow/component-slideshow-element/component-slideshow-element.html">
+        <link rel="import" href="../2-github-profile-card/github-profile-card-element/github-profile-card-element.html">                
+        <link rel="import" href="../1-mockup/mockup-element/mockup-element.html">
+        <!--<mockup-element imageSrc="http://placeskull.com/100/100?ver=1" label="header raz"></mockup-element>      
+        <mockup-element imageSrc="http://placeskull.com/100/100?ver=2" label="header dwa"></mockup-element>
+        <github-profile-card login="piecioshka"></github-profile-card>
+        <github-profile-card login="plysik"></github-profile-card>-->
+        <component-slideshow>
+            <mockup-element imageSrc="http://placeskull.com/100/100?ver=1" label="header raz"></mockup-element>      
+            <mockup-element imageSrc="http://placeskull.com/100/100?ver=2" label="header dwa"></mockup-element>
+            <github-profile-card login="piecioshka"></github-profile-card>
+            <github-profile-card login="plysik"></github-profile-card>
+        </component-slideshow>
+    </body>
+</html

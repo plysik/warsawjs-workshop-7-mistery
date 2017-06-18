@@ -101,11 +101,10 @@ class GithubProfileCard extends HTMLElement{
     
     _attachTemplate()
     {
-        let template = document.currentScript.ownerDocument.querySelector("template").content.cloneNode(true);
+        let template = GithubProfileCard.DOCUMENT.querySelector("template").content.cloneNode(true);
         this.shadow.appendChild(template);
     }
-
 }
-
+GithubProfileCard.DOCUMENT = document.currentScript.ownerDocument;
 window.customElements.define('github-profile-card', GithubProfileCard);
 

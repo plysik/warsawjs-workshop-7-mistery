@@ -1,0 +1,36 @@
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.body{
+    padding: 15px;
+    font-family: 'Lato', sans-serif;
+    margin: 5px;
+    background-color: grey;
+    text-align: center;
+}
+.content{
+    background-color: rgba(255, 255, 255, 0.7);
+    min-width: 600px;
+    min-height: 650px;    
+    position: relative;
+}
+.content:before {
+    content: '►';
+    font-size: 150px;
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 30%;
+}
+
+.content:empty:before {
+    cursor: pointer;
+}
+
+.content:not(:empty):before {
+    display: none;
+}

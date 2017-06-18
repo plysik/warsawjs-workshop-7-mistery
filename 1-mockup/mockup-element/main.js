@@ -4,7 +4,7 @@ class MockupElement extends HTMLElement{
         this.shadow  = this.attachShadow({mode:'open'});
     }
     connectedCallback(){
-        let template = document.currentScript.ownerDocument.querySelector("template").content.cloneNode(true);
+        let template = MockupElement.DOCUMENT.querySelector("template").content.cloneNode(true);
         this.shadow.appendChild(template);
         let $img = this.shadow.querySelector('img');
         $img.src = this.attributes.imageSrc.value;
@@ -13,6 +13,7 @@ class MockupElement extends HTMLElement{
         $h1.innerHTML = this.attributes.label.value;
     }
 }
+MockupElement.DOCUMENT = document.currentScript.ownerDocument;
 
 window.customElements.define('mockup-element', MockupElement);
 
