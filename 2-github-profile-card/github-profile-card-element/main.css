@@ -32,6 +32,13 @@ img{
 h1{
     display: inline-block;
 }
+h3{
+    margin: 0;
+    padding: 3px;
+    color: #909090;
+    font-weight: lighter;
+    display: inline-block;
+}
 ul{
     text-align: left;
     list-style: none;

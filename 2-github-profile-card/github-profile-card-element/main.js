@@ -43,6 +43,8 @@ class GithubProfileCard extends HTMLElement{
         $img.src = profile.avatar_url;
         let $h1 = this.shadow.querySelector('h1');
         $h1.innerHTML = profile.name;
+        let $h3 = this.shadow.querySelector('h3');
+        $h3.innerHTML = profile.location;
         let $p = this.shadow.querySelector('p');
         $p.innerHTML = profile.bio;
     }
