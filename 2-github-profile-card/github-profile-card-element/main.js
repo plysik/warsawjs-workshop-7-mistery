@@ -1,5 +1,5 @@
 const LIMIT_OF_REPOSITORY_LIST = 9;
-const MOCKED_DATA = false;
+const MOCKED_DATA = true;
 
 class GithubProfileCard extends HTMLElement{
     constructor(){
@@ -18,8 +18,7 @@ class GithubProfileCard extends HTMLElement{
         
     }
     _fetchData(login){
-        //let url = 'https://api.github.com/users/' + login;
-        let url = MOCKED_DATA?  'mocks/profile.json' : ('https://api.github.com/users/' + login);
+        let url = MOCKED_DATA?  '../2-github-profile-card/mocks/profile.json' : ('https://api.github.com/users/' + login);
 
         let options = {method:"GET"};
 
@@ -50,7 +49,7 @@ class GithubProfileCard extends HTMLElement{
     }
     _fetchRepos(profile){
         // let url = profile.repos_url;
-        let url = MOCKED_DATA?  'mocks/repos.json' : (profile.repos_url);
+        let url = MOCKED_DATA?  '../2-github-profile-card/mocks/repos.json' : (profile.repos_url);
         let options = { method: 'GET' };
         return fetch(url, options)
             .then((response)=>{

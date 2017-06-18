@@ -27,17 +27,24 @@ hr{
 }
 img{
     width: 200px;
-    height: auto;
+    height: 200px;
+}
+.flex{
+    display: flex;
+}
+.headers{
+    display: inline-block;
+    padding: 3px;
 }
 h1{
-    display: inline-block;
+    /*display: inline-block;*/
+    margin: 0;
 }
 h3{
     margin: 0;
     padding: 3px;
     color: #909090;
     font-weight: lighter;
-    display: inline-block;
 }
 ul{
     text-align: left;
