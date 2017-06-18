@@ -1,0 +1,34 @@
+.body{
+    font-family: 'Lato', sans-serif;
+    background-image: url('https://d2l5v8ibvnnoh9.cloudfront.net/assets/screenflick/imac_display_880_2x-643697b9bd733480d296d4c97d0fbbec708c9b7e64f035fb93ca24cf7e278373.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding: 0 3px;
+    margin: 15px;
+    display: inline-block;
+    width: 400px;
+    height: 296px;
+    position: relative;
+}
+.body > img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 197px;
+    width: auto;
+}
+.body > h1{
+    position: absolute;    
+    font-weight: normal;
+    color: white;
+    background-color: #6b6b6b;
+    width: 99%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center; 
+    box-sizing: border-box;
+    bottom: 60px;
+}
