@@ -9,6 +9,7 @@
     font-family: 'Lato', sans-serif;
     margin: 30px;
     display: inline-block;
+    background-color: grey;
 }
 .content{
     background-color: rgba(255, 255, 255, 0.7);
